@@ -8,7 +8,9 @@
 import UIKit
 
 class ItemAddViewController: UIViewController {
-
+    
+    @IBOutlet weak var addItem: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -9,13 +9,13 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var imge: UIImageView!
     @IBOutlet weak var Label: UILabel!
     var vm = MainViewModel()
     
     func createCell(text: String, indexPath: IndexPath){
         self.Label.text = text
+        print("テキストーーーー",text)
         self.imge.image  = UIImage(
             systemName: vm.listitems[indexPath.row].ischecked
             ? "checkmark.circle.fill"

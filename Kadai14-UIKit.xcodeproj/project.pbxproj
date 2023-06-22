@@ -111,10 +111,10 @@
 			children = (
 				69BD09E82A42DC1800DD7041 /* AppDelegate.swift */,
 				69BD09EA2A42DC1800DD7041 /* SceneDelegate.swift */,
-				69BD09EC2A42DC1800DD7041 /* ViewController.swift */,
 				69BD0A1A2A42DDAA00DD7041 /* ViewModel.swift */,
-				69BD0A202A44327200DD7041 /* ItemAddViewController.swift */,
 				69BD0A182A42DD2C00DD7041 /* Model.swift */,
+				69BD09EC2A42DC1800DD7041 /* ViewController.swift */,
+				69BD0A202A44327200DD7041 /* ItemAddViewController.swift */,
 				69BD09EE2A42DC1800DD7041 /* Main.storyboard */,
 				69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */,
 				69BD0A1D2A43182E00DD7041 /* ListTableViewCell.xib */,

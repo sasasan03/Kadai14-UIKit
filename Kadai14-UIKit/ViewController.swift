@@ -8,18 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var mainViewModel = MainViewModel()
     
     @IBOutlet weak var tabelView: UITableView!
     
     @IBAction func exit(segue: UIStoryboardSegue) {
     }
     
-    var mainViewModel = MainViewModel()
-
+    @IBAction func exitAddition(segue: UIStoryboardSegue) {
+        guard let nextVC = segue.source as? ItemAddViewController,
+              let addItem = nextVC.addItem.text else { return print("値なし") }
+        print(">>>>",addItem)
+        mainViewModel.listitems.append(ListItem(ischecked: false, name: addItem))
+        print("****",mainViewModel.listitems)
+        tabelView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //nibを登録
         let nib = UINib(nibName: "ListTableViewCell", bundle: nil)
         tabelView.register(nib, forCellReuseIdentifier: "ListTableViewCell")
     }

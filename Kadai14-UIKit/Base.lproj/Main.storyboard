@@ -92,8 +92,15 @@
                                 <segue destination="vB1-ep-R3S" kind="unwind" unwindAction="exitWithSegue:" id="zdr-NL-c3x"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="115-yt-xEQ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="115-yt-xEQ">
+                            <connections>
+                                <segue destination="vB1-ep-R3S" kind="unwind" unwindAction="exitAdditionWithSegue:" id="Lvt-nt-OGX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addItem" destination="uFC-7q-AO1" id="JIm-2F-3RJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMy-tu-EM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="vB1-ep-R3S" userLabel="Exit" sceneMemberID="exit"/>
