@@ -20,6 +20,7 @@
 		69BD0A1B2A42DDAA00DD7041 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0A1A2A42DDAA00DD7041 /* ViewModel.swift */; };
 		69BD0A1E2A43182E00DD7041 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */; };
 		69BD0A1F2A43182E00DD7041 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BD0A1D2A43182E00DD7041 /* ListTableViewCell.xib */; };
+		69BD0A212A44327200DD7041 /* ItemAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0A202A44327200DD7041 /* ItemAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		69BD0A1A2A42DDAA00DD7041 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		69BD0A1D2A43182E00DD7041 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		69BD0A202A44327200DD7041 /* ItemAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				69BD09EA2A42DC1800DD7041 /* SceneDelegate.swift */,
 				69BD09EC2A42DC1800DD7041 /* ViewController.swift */,
 				69BD0A1A2A42DDAA00DD7041 /* ViewModel.swift */,
+				69BD0A202A44327200DD7041 /* ItemAddViewController.swift */,
 				69BD0A182A42DD2C00DD7041 /* Model.swift */,
 				69BD09EE2A42DC1800DD7041 /* Main.storyboard */,
 				69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */,
@@ -273,6 +276,7 @@
 			files = (
 				69BD0A1B2A42DDAA00DD7041 /* ViewModel.swift in Sources */,
 				69BD09ED2A42DC1800DD7041 /* ViewController.swift in Sources */,
+				69BD0A212A44327200DD7041 /* ItemAddViewController.swift in Sources */,
 				69BD09E92A42DC1800DD7041 /* AppDelegate.swift in Sources */,
 				69BD09EB2A42DC1800DD7041 /* SceneDelegate.swift in Sources */,
 				69BD0A192A42DD2C00DD7041 /* Model.swift in Sources */,
