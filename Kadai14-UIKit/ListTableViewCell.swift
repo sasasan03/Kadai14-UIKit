@@ -11,12 +11,13 @@ class ListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imge: UIImageView!
     @IBOutlet weak var Label: UILabel!
+    //シングルトンで
     var mainViewModel = MainViewModel.shared
 
-    
+    //セルを作る
     func createCell(text: String, indexPath: IndexPath){
-        self.Label?.text = text
-        self.imge?.image  = UIImage(
+        self.Label.text = text
+        self.imge.image  = UIImage(
             systemName: mainViewModel.listitems[indexPath.row].ischecked
             ? "checkmark.circle.fill"
             : "circle"

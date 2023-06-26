@@ -41,5 +41,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.createCell(text: mainViewModel.listitems[indexPath.row].name, indexPath: indexPath)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.mainViewModel.listitems[indexPath.row].ischecked.toggle()
+        tabelView.reloadRows(at: [indexPath], with: .automatic)
+    }
 }
 
