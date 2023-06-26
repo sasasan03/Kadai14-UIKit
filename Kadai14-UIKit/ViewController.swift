@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var mainViewModel = MainViewModel()
+    var mainViewModel = MainViewModel.shared
     
     @IBOutlet weak var tabelView: UITableView!
     
@@ -19,9 +19,7 @@ class ViewController: UIViewController {
     @IBAction func exitAddition(segue: UIStoryboardSegue) {
         guard let nextVC = segue.source as? ItemAddViewController,
               let addItem = nextVC.addItem.text else { return print("値なし") }
-        print(">>>>",addItem)
         mainViewModel.listitems.append(ListItem(ischecked: false, name: addItem))
-        print("****",mainViewModel.listitems)
         tabelView.reloadData()
     }
     

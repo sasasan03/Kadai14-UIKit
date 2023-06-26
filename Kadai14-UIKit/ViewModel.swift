@@ -8,6 +8,11 @@
 import Foundation
 
 class MainViewModel {
+    
+    private init() {}
+    
+    public static let shared = MainViewModel()
+    
     var listitems = [
     ListItem(ischecked: false, name: "朝もく"),
     ListItem(ischecked: true, name: "昼もく"),
