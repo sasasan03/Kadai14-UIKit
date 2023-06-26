@@ -11,10 +11,10 @@ class ListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imge: UIImageView!
     @IBOutlet weak var Label: UILabel!
-    //シングルトンで
+    //表示させたいリスト情報をインスタンス化
     var mainViewModel = MainViewModel.shared
 
-    //セルを作る
+    //セルを作るメソッド
     func createCell(text: String, indexPath: IndexPath){
         self.Label.text = text
         self.imge.image  = UIImage(

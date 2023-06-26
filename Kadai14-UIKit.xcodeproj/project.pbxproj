@@ -21,6 +21,7 @@
 		69BD0A1E2A43182E00DD7041 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */; };
 		69BD0A1F2A43182E00DD7041 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BD0A1D2A43182E00DD7041 /* ListTableViewCell.xib */; };
 		69BD0A212A44327200DD7041 /* ItemAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0A202A44327200DD7041 /* ItemAddViewController.swift */; };
+		69BD0AAD2A49B25900DD7041 /* ItemAddView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BD0AAB2A49B25900DD7041 /* ItemAddView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		69BD0A1D2A43182E00DD7041 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		69BD0A202A44327200DD7041 /* ItemAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddViewController.swift; sourceTree = "<group>"; };
+		69BD0AAC2A49B25900DD7041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Kadai14-UIKit/Base.lproj/ItemAddView.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +116,11 @@
 				69BD0A1A2A42DDAA00DD7041 /* ViewModel.swift */,
 				69BD0A182A42DD2C00DD7041 /* Model.swift */,
 				69BD09EC2A42DC1800DD7041 /* ViewController.swift */,
-				69BD0A202A44327200DD7041 /* ItemAddViewController.swift */,
 				69BD09EE2A42DC1800DD7041 /* Main.storyboard */,
-				69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */,
+				69BD0AAB2A49B25900DD7041 /* ItemAddView.storyboard */,
+				69BD0A202A44327200DD7041 /* ItemAddViewController.swift */,
 				69BD0A1D2A43182E00DD7041 /* ListTableViewCell.xib */,
+				69BD0A1C2A43182E00DD7041 /* ListTableViewCell.swift */,
 				69BD09F12A42DC1800DD7041 /* Assets.xcassets */,
 				69BD09F32A42DC1800DD7041 /* LaunchScreen.storyboard */,
 				69BD09F62A42DC1800DD7041 /* Info.plist */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69BD0AAD2A49B25900DD7041 /* ItemAddView.storyboard in Resources */,
 				69BD09F52A42DC1800DD7041 /* LaunchScreen.storyboard in Resources */,
 				69BD0A1F2A43182E00DD7041 /* ListTableViewCell.xib in Resources */,
 				69BD09F22A42DC1800DD7041 /* Assets.xcassets in Resources */,
@@ -331,6 +335,14 @@
 				69BD09F42A42DC1800DD7041 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		69BD0AAB2A49B25900DD7041 /* ItemAddView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69BD0AAC2A49B25900DD7041 /* Base */,
+			);
+			name = ItemAddView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

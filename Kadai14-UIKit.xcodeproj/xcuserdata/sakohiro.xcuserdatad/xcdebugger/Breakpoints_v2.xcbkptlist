@@ -3,4 +3,114 @@
    uuid = "BB37E561-E8F0-49D7-904F-FC63D1B94D9B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "612EA7D7-2370-4170-A0E3-249D33600D63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kadai14-UIKit/ItemAddViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ItemAddViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "612EA7D7-2370-4170-A0E3-249D33600D63 - 1e8f0f1076cd98e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kadai14_UIKit.ItemAddViewController.addItem.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Kadai14-UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakohiro/Desktop/Kadai14-UIKit/Kadai14-UIKit/ItemAddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "612EA7D7-2370-4170-A0E3-249D33600D63 - e7c524533eea8d9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kadai14_UIKit.ItemAddViewController.addItem.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Kadai14-UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakohiro/Desktop/Kadai14-UIKit/Kadai14-UIKit/ItemAddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "612EA7D7-2370-4170-A0E3-249D33600D63 - dda2b94fdf88448d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kadai14_UIKit.ItemAddViewController.addItem.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Kadai14-UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakohiro/Desktop/Kadai14-UIKit/Kadai14-UIKit/ItemAddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "612EA7D7-2370-4170-A0E3-249D33600D63 - e6b664048891f7a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kadai14_UIKit.ItemAddViewController.addItem.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Kadai14-UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakohiro/Desktop/Kadai14-UIKit/Kadai14-UIKit/ItemAddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "612EA7D7-2370-4170-A0E3-249D33600D63 - e36ecee4a4548b46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kadai14_UIKit.ItemAddViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Kadai14_UIKit.ItemAddViewController"
+                  moduleName = "Kadai14-UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakohiro/Desktop/Kadai14-UIKit/Kadai14-UIKit/ItemAddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "612EA7D7-2370-4170-A0E3-249D33600D63 - ca3656cb14fb391c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kadai14_UIKit.ItemAddViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Kadai14_UIKit.ItemAddViewController&gt;"
+                  moduleName = "Kadai14-UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sakohiro/Desktop/Kadai14-UIKit/Kadai14-UIKit/ItemAddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

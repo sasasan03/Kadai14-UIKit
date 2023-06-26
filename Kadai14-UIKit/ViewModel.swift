@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//継承先で新たなオブジェクトを作成するのを防ぐ
+//継承先で新たなオブジェクトを作成するのを防ぐためfinalを付与する
 final public class MainViewModel {
     //初期化させない。let mainViewModel2 = MainViewModel()❌できなくなる。
     private init() {}

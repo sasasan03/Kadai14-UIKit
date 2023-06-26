@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tabelView: UITableView!
     
+    //MARK: - セグエ
     @IBAction func exit(segue: UIStoryboardSegue) {
     }
     
@@ -22,26 +23,32 @@ class ViewController: UIViewController {
         mainViewModel.listitems.append(ListItem(ischecked: false, name: addItem))
         tabelView.reloadData()
     }
-    
+    //MARK: - Viewの描画情報を登録
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Storyboardの情報を登録する。
         let nib = UINib(nibName: "ListTableViewCell", bundle: nil)
         tabelView.register(nib, forCellReuseIdentifier: "ListTableViewCell")
     }
 }
 
+// MARK: - ViewControlerにDelegateとDataSourceを継承させる
+
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    //リストに表示されるカウントを取得
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         mainViewModel.listitems.count
     }
     
+    //リストのセルを作成
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
-        //カスタムセルを制作
+        //ListTableViewCellのcreateCellメソッドで細かなセルを作成
         cell.createCell(text: mainViewModel.listitems[indexPath.row].name, indexPath: indexPath)
         return cell
     }
     
+    //セルがタップされた時の処理を記述
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.mainViewModel.listitems[indexPath.row].ischecked.toggle()
         tabelView.reloadRows(at: [indexPath], with: .automatic)
