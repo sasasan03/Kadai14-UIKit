@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         mainViewModel.listitems.append(ListItem(ischecked: false, name: addItem))
         tabelView.reloadData()
     }
-    //MARK: - Viewの描画情報を登録
+    //MARK: - MainStoryboardの情報を登録。
     override func viewDidLoad() {
         super.viewDidLoad()
         //Storyboardの情報を登録する。
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
 }
 
-// MARK: - ViewControlerにDelegateとDataSourceを継承させる
+// MARK: - ViewControlerにUITableViewDelegateとUITableViewDataSourceを適合させる
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     //リストに表示されるカウントを取得

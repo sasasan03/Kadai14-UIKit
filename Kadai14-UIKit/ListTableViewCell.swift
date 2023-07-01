@@ -14,7 +14,7 @@ class ListTableViewCell: UITableViewCell {
     //表示させたいリスト情報をインスタンス化
     var mainViewModel = MainViewModel.shared
 
-    //セルを作るメソッド
+    //セルを作るためのメソッド
     func createCell(text: String, indexPath: IndexPath){
         self.Label.text = text
         self.imge.image  = UIImage(

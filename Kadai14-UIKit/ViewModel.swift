@@ -6,9 +6,9 @@
 //
 
 import Foundation
-//継承先で新たなオブジェクトを作成するのを防ぐためfinalを付与する
-final public class MainViewModel {
-    //初期化させない。let mainViewModel2 = MainViewModel()❌できなくなる。
+//⬇️継承先で新たなオブジェクトを作成するのを防ぐためfinalを付与する。
+ final public class MainViewModel {
+    //⬇️初期化させない。let mainViewModel2 = MainViewModel()❌できなくなる。
     private init() {}
     
     public static let shared = MainViewModel()
@@ -20,4 +20,3 @@ final public class MainViewModel {
     ListItem(ischecked: true, name: "深夜もく")
     ]
 }
-
