@@ -7,8 +7,18 @@
 
 import UIKit
 
+protocol ReusableCell {}
+
+extension UITableView {
+    func register(cellType: ReusableCell.Type){
+        let className = String(describing: type(of: cellType.self))
+        let nib = UINib(nibName: className, bundle: nil)
+        register(nib, forCellReuseIdentifier: className)
+    }
+}
+
 class ViewController: UIViewController {
-    
+    //差し替え不可
     var mainViewModel = MainViewModel.shared
     
     @IBOutlet weak var tabelView: UITableView!
@@ -26,9 +36,6 @@ class ViewController: UIViewController {
     //MARK: - MainStoryboardの情報を登録。
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Storyboardの情報を登録する。
-        let nib = UINib(nibName: "ListTableViewCell", bundle: nil)
-        tabelView.register(nib, forCellReuseIdentifier: "ListTableViewCell")
     }
 }
 
@@ -40,11 +47,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         mainViewModel.listitems.count
     }
     
-    //リストのセルを作成
+    //リストのセルを作成。configure・・設定するという意味の方が相応しい。con（一緒）figure（形）語源を調べる。
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
         //ListTableViewCellのcreateCellメソッドで細かなセルを作成
-        cell.createCell(text: mainViewModel.listitems[indexPath.row].name, indexPath: indexPath)
+        cell.configure(text: mainViewModel.listitems[indexPath.row].name, indexPath: indexPath)
         return cell
     }
     

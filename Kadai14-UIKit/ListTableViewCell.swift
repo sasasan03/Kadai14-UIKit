@@ -7,15 +7,18 @@
 
 import UIKit
 
-class ListTableViewCell: UITableViewCell {
+class ListTableViewCell: UITableViewCell, ReusableCell {
+    
+    //ここでidentifierをインスタンスかして使用する
+    static let identifier = "Cell"
     
     @IBOutlet weak var imge: UIImageView!
     @IBOutlet weak var Label: UILabel!
-    //表示させたいリスト情報をインスタンス化
+    //表示させたいリスト情報をインスタンス化。
     var mainViewModel = MainViewModel.shared
 
-    //セルを作るためのメソッド
-    func createCell(text: String, indexPath: IndexPath){
+    //セルを作るためのメソッド　　メソッド名
+    func configure(text: String, indexPath: IndexPath){
         self.Label.text = text
         self.imge.image  = UIImage(
             systemName: mainViewModel.listitems[indexPath.row].ischecked

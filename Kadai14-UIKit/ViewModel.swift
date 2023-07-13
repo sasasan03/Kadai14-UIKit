@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//MARK: シングルトンパターンとはクラスのオブジェクトを一つ作り、各クラスでそのオブジェクトを共有したい場合に使用。
 //⬇️継承先で新たなオブジェクトを作成するのを防ぐためfinalを付与する。
  final public class MainViewModel {
     //⬇️初期化させない。let mainViewModel2 = MainViewModel()❌できなくなる。
@@ -20,3 +21,5 @@ import Foundation
     ListItem(ischecked: true, name: "深夜もく")
     ]
 }
+
+
