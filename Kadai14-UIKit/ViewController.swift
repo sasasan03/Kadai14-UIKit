@@ -7,15 +7,17 @@
 
 import UIKit
 
-protocol ReusableCell {}
-
-extension UITableView {
-    func register(cellType: ReusableCell.Type){
-        let className = String(describing: type(of: cellType.self))
-        let nib = UINib(nibName: className, bundle: nil)
-        register(nib, forCellReuseIdentifier: className)
-    }
+protocol ReusableCell {
+    //static var identifier: String { get }
 }
+
+//extension UITableView {
+//    func register(cellType: ReusableCell.Type){
+//        let className = String(describing: type(of: cellType.self))
+//        let nib = UINib(nibName: className, bundle: nil)
+//        register(nib, forCellReuseIdentifier: className)
+//    }
+//}
 
 class ViewController: UIViewController {
     //差し替え不可
@@ -36,6 +38,8 @@ class ViewController: UIViewController {
     //MARK: - MainStoryboardの情報を登録。
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: ListTableViewCell.nibName, bundle: nil)
+        tabelView.register (nib, forCellReuseIdentifier: ListTableViewCell.identifier)
     }
 }
 

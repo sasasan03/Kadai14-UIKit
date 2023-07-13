@@ -8,9 +8,9 @@
 import UIKit
 
 class ListTableViewCell: UITableViewCell, ReusableCell {
-    
+    static let nibName = "ListTableViewCell"
     //ここでidentifierをインスタンスかして使用する
-    static let identifier = "Cell"
+    static let identifier = "ListTableViewCell"
     
     @IBOutlet weak var imge: UIImageView!
     @IBOutlet weak var Label: UILabel!
